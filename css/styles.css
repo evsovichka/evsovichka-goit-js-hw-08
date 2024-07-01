@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 24px 156px;
+}
+
+.gallery-image {
+  height: 240px;
+  object-fit: cover;
+}
+
+.gallery-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+
+.modal {
+  width: 1112px;
+}
+
+.modal img {
+  width: 100%;
+}
