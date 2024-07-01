@@ -7,11 +7,14 @@
   align-items: center;
   list-style: none;
   padding: 24px 156px;
+  margin: 0;
 }
 
+.gallery-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
 .gallery-image {
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
 }
 
 .gallery-image:hover {
@@ -19,12 +22,4 @@
   transform: scale(1.1);
   transform-origin: center;
   transition: transform 0.5s;
-}
-
-.modal {
-  width: 1112px;
-}
-
-.modal img {
-  width: 100%;
 }

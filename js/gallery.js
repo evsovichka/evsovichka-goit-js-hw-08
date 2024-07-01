@@ -77,7 +77,6 @@ function createMurkup(arr) {
       src= "${preview}"
       data-source="${original}"
       alt= "${description}"
-      width = '360' 
     />
   </a>
 </li>
@@ -99,7 +98,7 @@ function handlerClick(evt) {
 
   const instance = basicLightbox.create(`
   <div class="modal">
-      <img src="${evt.target.dataset.source}" alt="${evt.target.alt}" >
+      <img src="${evt.target.dataset.source}" alt="${evt.target.alt}" width = "1112" height ="640">
   </div>
 `);
   instance.show();
